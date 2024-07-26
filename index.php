@@ -35,5 +35,5 @@ include_once("templates/header.php");
 </main>
 
 <?php
-include_once("templates/footer.php")
+    include_once("templates/footer.php")
 ?>
