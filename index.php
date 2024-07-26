@@ -1,9 +1,39 @@
 <?php
-    include_once("templates/header.php")
+include_once("templates/header.php");
 ?>
 
-    <h1>Teste</h1>
+<main>
+    <div id="title-container">
+        <h1>Blog Codar</h1>
+        <p>o seu log de programação</p>
+    </div>
+
+    <div id="posts-container">
+        <?php foreach ($posts as $post) : ?>
+            <div class="post-box">
+
+                <img src="/projeto_blog/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
+
+                <h2 class="post-title">
+                    <a href="/projeto_blog/posts.php?id=<?= $post['id'] ?>">
+                        <?= $post['title'] ?>
+                    </a>
+                </h2>
+
+                <p class="posts-description">
+                    <?= $post['description'] ?>
+                </p>
+
+                <div class="tags-container">
+                    <?php foreach ($post['tags'] as $tag) : ?>
+                        <a href="#"><?= $tag ?></a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</main>
 
 <?php
-    include_once("templates/footer.php")
+include_once("templates/footer.php")
 ?>
