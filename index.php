@@ -15,7 +15,7 @@ include_once("templates/header.php");
                 <img src="/projeto_blog/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
 
                 <h2 class="post-title">
-                    <a href="/projeto_blog/posts.php?id=<?= $post['id'] ?>">
+                    <a href="/projeto_blog/post.php?id=<?= $post['id'] ?>">
                         <?= $post['title'] ?>
                     </a>
                 </h2>
