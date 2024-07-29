@@ -1,44 +1,42 @@
 <?php
-    include_once("templates/header.php");
+include_once("templates/header.php");
 
-    if(isset($_GET['id'])) {
+if (isset($_GET['id'])) {
 
-        $postId = $_GET['id'];
-        $currentPost;
+    $postId = $_GET['id'];
+    $currentPost;
 
-        foreach($posts as $post) {
+    foreach ($posts as $post) {
 
-            if($post['id'] == $postId) {
-                $currentPost = $post;
-            } 
-
+        if ($post['id'] == $postId) {
+            $currentPost = $post;
         }
     }
+}
 ?>
 
-    <main id="post-container">
-        <div class="content-container">
+<main id="post-container">
+    <div class="content-container">
 
-            <h1 id="main-title"><?= $currentPost['title'] ?></h1>
+        <h1 id="main-title"><?= $currentPost['title'] ?></h1>
 
-            <p id="post-description"><?= $currentPost['description'] ?></p>
+        <p id="post-description"><?= $currentPost['description'] ?></p>
 
-            <div class="img-container">
-                <img src="/projeto_blog/img/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
-            </div>
-            <p class="post-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab molestiae molestias ut reprehenderit praesentium! Quidem magnam fugit quia mollitia eveniet nulla minus unde praesentium, nostrum et possimus in maiores?
-            Repellat inventore quae ad dicta enim ipsam reprehenderit voluptatem fuga perferendis facere dolore rerum magnam sint sit cupiditate alias, ullam molestiae minus nam eius quam ex, labore recusandae deleniti? Nesciunt.
-            Est voluptates magnam atque tenetur iste deleniti deserunt dolorum nesciunt ullam reprehenderit possimus tempora, incidunt reiciendis quasi magni porro dolore iure minus officiis illo repellendus adipisci! Neque esse similique maiores.
-            Distinctio numquam, aliquid quos asperiores neque molestias quo? Ullam, optio? Aliquam cupiditate tempore neque, quae deleniti, placeat ab ipsa rerum quaerat, voluptatem et. At aut fugit nesciunt nihil ipsam consectetur.
-            Laboriosam aut ipsam hic nostrum, cum repudiandae cupiditate consectetur! Harum ea minima optio quos. Adipisci fugiat commodi similique quas exercitationem quo voluptate blanditiis! Sequi accusantium unde, nihil vel perferendis ullam.</p>
-
-            <p class="post-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab molestiae molestias ut reprehenderit praesentium! Quidem magnam fugit quia mollitia eveniet nulla minus unde praesentium, nostrum et possimus in maiores?
-            Repellat inventore quae ad dicta enim ipsam reprehenderit voluptatem fuga perferendis facere dolore rerum magnam sint sit cupiditate alias, ullam molestiae minus nam eius quam ex, labore recusandae deleniti? Nesciunt.
-            Est voluptates magnam atque tenetur iste deleniti deserunt dolorum nesciunt ullam reprehenderit possimus tempora, incidunt reiciendis quasi magni porro dolore iure minus officiis illo repellendus adipisci! Neque esse similique maiores.
-            Distinctio numquam, aliquid quos asperiores neque molestias quo? Ullam, optio? Aliquam cupiditate tempore neque, quae deleniti, placeat ab ipsa rerum quaerat, voluptatem et. At aut fugit nesciunt nihil ipsam consectetur.
-            Laboriosam aut ipsam hic nostrum, cum repudiandae cupiditate consectetur! Harum ea minima optio quos. Adipisci fugiat commodi similique quas exercitationem quo voluptate blanditiis! Sequi accusantium unde, nihil vel perferendis ullam.</p>
+        <div class="img-container">
+            <img src="/projeto_blog/img/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
         </div>
-    </main>
+        <p class="post-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab molestiae molestias ut reprehenderit praesentium! Quidem magnam fugit quia mollitia eveniet nulla minus unde praesentium, nostrum et possimus in maiores?
+            Repellat inventore quae ad dicta enim ipsam reprehenderit voluptatem fuga perferendis facere dolore rerum magnam sint sit cupiditate alias, ullam molestiae minus nam eius quam ex, labore recusandae deleniti? Nesciunt.
+            Est voluptates magnam atque tenetur iste deleniti deserunt dolorum nesciunt ullam reprehenderit possimus tempora, incidunt reiciendis quasi magni porro dolore iure minus officiis illo repellendus adipisci! Neque esse similique maiores.
+            Distinctio numquam, aliquid quos asperiores neque molestias quo? Ullam, optio? Aliquam cupiditate tempore neque, quae deleniti, placeat ab ipsa rerum quaerat, voluptatem et. At aut fugit nesciunt nihil ipsam consectetur.
+            Laboriosam aut ipsam hic nostrum, cum repudiandae cupiditate consectetur! Harum ea minima optio quos. Adipisci fugiat commodi similique quas exercitationem quo voluptate blanditiis! Sequi accusantium unde, nihil vel perferendis ullam.</p>
+
+        <p class="post-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab molestiae molestias ut reprehenderit praesentium! Quidem magnam fugit quia mollitia eveniet nulla minus unde praesentium, nostrum et possimus in maiores?
+            Repellat inventore quae ad dicta enim ipsam reprehenderit voluptatem fuga perferendis facere dolore rerum magnam sint sit cupiditate alias, ullam molestiae minus nam eius quam ex, labore recusandae deleniti? Nesciunt.
+            Est voluptates magnam atque tenetur iste deleniti deserunt dolorum nesciunt ullam reprehenderit possimus tempora, incidunt reiciendis quasi magni porro dolore iure minus officiis illo repellendus adipisci! Neque esse similique maiores.
+            Distinctio numquam, aliquid quos asperiores neque molestias quo? Ullam, optio? Aliquam cupiditate tempore neque, quae deleniti, placeat ab ipsa rerum quaerat, voluptatem et. At aut fugit nesciunt nihil ipsam consectetur.
+            Laboriosam aut ipsam hic nostrum, cum repudiandae cupiditate consectetur! Harum ea minima optio quos. Adipisci fugiat commodi similique quas exercitationem quo voluptate blanditiis! Sequi accusantium unde, nihil vel perferendis ullam.</p>
+    </div>
 
     <aside id="nav-container">
         <h3 id="tags-title">Tags</h3>
@@ -50,10 +48,13 @@
         <h3 id="categories-title">Categorias</h3>
         <ul id="categories-list">
             <?php foreach ($categories as $category) : ?>
-                    <li><a href="#"><?= $category ?></a></li>
+                <li><a href="#"><?= $category ?></a></li>
             <?php endforeach; ?>
         </ul>
     </aside>
+</main>
+
+
 <?php
-    include_once("templates/footer.php")
+include_once("templates/footer.php")
 ?>
